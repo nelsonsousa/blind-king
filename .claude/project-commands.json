@@ -1,0 +1,12 @@
+{
+  "lint_file": "npx eslint {file}",
+  "lint": "npx eslint .",
+  "typecheck": "npx tsc --noEmit",
+  "test_unit": "npx vitest run tests/unit --passWithNoTests",
+  "test_integration": "npx vitest run tests/integration --passWithNoTests",
+  "test_regression": "npx vitest run tests/regression --passWithNoTests",
+  "test_e2e": "npx vitest run tests/e2e --passWithNoTests",
+  "test_one": "npx vitest run {test}",
+  "coverage": "npx vitest run --coverage --passWithNoTests",
+  "patch_coverage": ".venv/bin/diff-cover coverage/cobertura-coverage.xml --compare-branch=main"
+}
